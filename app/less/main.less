@@ -1,0 +1,430 @@
+ body{
+ 	font-family: sans-serif;
+ }
+ md-sidenav  
+ {
+    width: 310px;
+    height: 100%;
+    padding: 20px;
+    padding-top: 15px;
+    background-color: #292c33;
+    position: relative;
+    md-card
+	{
+		background-color: #292c33;
+		box-shadow: none;
+		color: #fff;
+		md-card-title
+		{
+			padding: 0;
+		}		
+	}
+ }
+ 
+.user-card-image
+{
+  height: 42px;
+  width: 42px;
+  margin-left: 10px;
+  border-radius: 50%;
+  color: #333;
+  font-size: 30px;
+  background-color: #646464; 
+  vertical-align: middle;
+  position: relative;
+  transform-origin: center;
+  .user-image
+  {
+  	position: absolute;
+  	left:50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 2;
+  }
+  &:after
+  {
+  	content: "";
+  	height: 50px;
+  	width: 50px;
+  	border: 1px solid #fff;
+  	border-radius: 50%;
+  	position: absolute;
+  	top: -4px;
+  	left: -4px;
+  }
+}
+md-card-user-name
+{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	font-size: 12px;
+	margin-left: 29px;
+}
+.project-list
+{	
+	margin-top: 14px;
+	color: #fff;
+	padding-left: 0;
+	font-size: 13px;
+	#add-project  
+	{
+		p
+		{
+			color: #ccc;
+			font-size: 11px;
+			margin-left: 1px;
+		}
+		.md-button.md-icon-button
+		{
+			font-size: 17px;
+			margin-right: -15px;
+			padding: 0;
+			// width: 21px;
+			// height: 21px;
+		}
+		
+	}
+	
+	md-list-item
+	{
+		padding: 0 15px; 
+		min-height: 30px;
+		&:before
+		{
+			min-height: 30px;
+		}
+		&._md-button-wrap
+		{
+			.md-button:first-child
+			{
+				margin: 0 -15px;
+				&:hover
+				{
+					background-color: #6b6b99;
+					transition: all 0.2s ease;
+				}
+			}	
+		}
+	}
+	.md-button
+	{
+		margin: 0 0;
+	}
+	md-list-item.md-no-proxy
+	{
+		cursor: pointer;
+		padding: 0 0px; 
+		border-radius: 5px;
+		transition: all 0.1s ease;
+		&:hover
+		{
+			background-color: #6b6b99;
+			transition: all 0.1s ease;
+		}
+	}
+	.project-list-item
+	{
+		display: inline-block;
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 16px;
+		p
+		{
+			display: inline-block;
+			float: left;
+		}
+		span
+		{
+			display: inline-block;
+			float: right;
+		}
+	}
+	
+}
+.log-out-container
+{
+	position: relative;
+	height: 100%;
+	min-height: 100px;
+	width: 100%
+}
+.log-out
+{
+	font-size: 13px;
+	color: #fff;
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	a
+	{
+		text-decoration: none;
+		color: #fff;
+		cursor: pointer;
+	}
+
+}
+md-content 
+{
+    background-color : #f7f7f7;
+    height:100%;
+    padding: 0px 0px 20px 0px;
+}
+md-toolbar
+{
+	height: 45px;
+	min-height: 45px;
+}
+
+.dropdown-menu-container
+{
+	background-color: #fff;
+	position: absolute;
+	right: 4px;
+	top: 45px;
+	display: none;
+	&.active
+	{
+		display: inline-block;
+		animation-name: appear;
+   		animation-duration: 0.3s;
+	}
+	&.not-active
+	{
+		animation-name: disappear;
+   		animation-duration: 0.3s;
+	}
+	.drop-down
+	{
+		height: 60px;
+		width: 130px;
+		padding: 0;
+		box-shadow: 1px 8px 20px 2px rgba(184,184,184,0.5);
+		overflow: hidden;
+		li
+		{
+			list-style: none;
+			// display: block;
+			width: 100%;
+			a
+			{
+				width: 100%;
+				float: left;
+				height: 20px;
+				line-height: 10px;
+				padding-top: 10px;
+				padding-left: 20px;
+				padding-bottom: 20px;
+				vertical-align: middle;
+				text-decoration: none;
+				font-size: 13px;
+				color: #111;
+				transition: all 0.1s;
+				&:hover
+				{
+					background-color: #6b6b99;
+					color: #fff;
+					transition: all 0.1s;
+				}
+			}
+		}
+	}
+}
+
+.md-menu-toolbar
+{
+	background-color: #f7f7f7;
+	color: #b3bbcb;
+	border-bottom: 1px solid #bdbdbd;
+	height: 100%;
+
+	.md-icon-button
+	{
+		color: #b3bbcb;
+		font-size: 25px;
+	}
+	#search-button
+	{
+		margin: 0;
+		padding: 0;
+
+	}
+	md-menu-bar
+	{
+		display: inline-block;
+	}
+}
+.search-container
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	.md-icon-button
+	{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.search-bar
+	{
+		display: inline-block;
+		width: 200px;
+		height: 35px;
+		font-size: 12px;
+		transition: all 0.3s;
+		margin-bottom: 27px;
+		// opacity: 0;
+		display: none;
+		vertical-align: middle;
+
+		
+		&.md-input-focused
+		{
+			// label
+			// {
+			// 	opacity: 0;
+			// 	transition: all 0.3s;
+			// 	// transform: translate3d(0, 15px, 0) scale(0.75);
+			// 	transform: none;
+			// }
+		}
+		&.md-input-has-value
+		{
+			// label
+			// {
+			// 	opacity: 0;
+			// 	transition: all 0.3s;
+			// 	// transform: translate3d(0, -25px, 0) scale(0.75);
+			// 	transform: none;
+			// }
+		}
+		label
+		{
+			font-size: 10px;
+		}
+		&.active
+		{
+			display: inline-block;
+			animation-name: appear;
+   			animation-duration: 0.2s;
+		}
+		&.not-active
+		{
+			animation-name: disappear;
+   			animation-duration: 0.2s;
+		}
+	}
+}
+.task-list-container
+{
+	padding-bottom: 0px;
+	position: relative;
+	.md-fab.add-task
+	{
+		color: #fff;
+		font-size: 30px;
+		position: fixed;
+		bottom: 25px;
+		right: 50px;
+	}
+	
+}
+.tasks-for-a-day
+{
+	width: 550px;
+	max-width: 550px;
+	min-width: 100px;
+	h4
+	{
+		color: #b3bbcb;
+		font-size: 14px;
+    	// font-weight: 100;
+    	letter-spacing: 0.5px;
+    	margin-bottom: 5px;
+    	margin-top: 15px;
+    	margin-left: 2px;
+    	span
+    	{
+    		color: #b3bbcb;
+    		opacity: 0.9;
+    		font-size: 12px;
+    		font-weight: 600;
+    		letter-spacing: 0px;
+    	}
+	}
+	.day-card
+	{
+		margin: 0;
+		padding: 0 50px; 
+		border-radius: 7px;
+		box-shadow: 1px 8px 20px 2px rgba(184,184,184,0.5);
+
+		md-list
+		{
+			padding-top: 0;	
+			padding-bottom: 0;	
+		}
+		
+		.task-list-item
+		{
+			height: 50px;
+			min-height: 50px;
+			
+		}
+		.task-text
+		{
+			width: 100%;
+			font-weight: 600;
+			font-size: 13px;
+			position: relative;
+			padding: 0 30px;
+
+
+			&:before
+			{
+				content: "";
+				position: absolute;
+				left: -40px;
+				bottom: 50%;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				border: 3px solid #bdbdbd;
+				transform: translateY(50%);
+			}
+			&:after
+			{
+				content: "";
+				position: absolute;
+				left: -13px;
+				bottom: 50%;
+				width: 20px;
+				height: 30px;
+				border-right: 1px solid #eee;
+				transform: translateY(50%);
+			}
+		}
+
+	}
+}
+
+.add-task-form
+{
+	.md-button.md-icon-button
+	{
+		margin: 0 6px 0 -9px;
+	} 
+}
+
+@keyframes appear
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes disappear
+{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
