@@ -87,7 +87,7 @@ _main2.default.controller('TaskListCtrl', function ($scope, $mdDialog, projectSe
   $scope.showAddTaskDialog = function (ev) {
     $mdDialog.show({
       controller: DialogController,
-      templateUrl: 'js/modules/TaskList/add.task.dialog.html',
+      templateUrl: 'app/js/modules/TaskList/add.task.dialog.html',
       parent: angular.element(document.body),
       targetEvent: ev,
       clickOutsideToClose: true,
