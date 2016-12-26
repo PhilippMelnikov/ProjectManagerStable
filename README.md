@@ -1,2 +1,2 @@
-# ProjectManagerStable-
+# ProjectManagerStable
 Simple Project Manager
