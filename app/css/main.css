@@ -356,10 +356,10 @@ md-input-container .md-errors-spacer {
   width: -webkit-calc(56%);
   width: calc(56%);
 }
-._md-datepicker-floating-label._md-datepicker-has-calendar-icon label:first-of-type {
-  -webkit-transform: translate3d(65px, 28px, 0) scale(1);
-          transform: translate3d(65px, 28px, 0) scale(1);
-}
+// ._md-datepicker-floating-label._md-datepicker-has-calendar-icon label:first-of-type {
+//   -webkit-transform: translate3d(65px, 28px, 0) scale(1);
+//           transform: translate3d(65px, 28px, 0) scale(1);
+// }
 @-webkit-keyframes appear {
   0% {
     opacity: 0;
