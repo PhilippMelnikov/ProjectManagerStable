@@ -50,8 +50,8 @@ md-sidenav md-card md-card-title {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   position: absolute;
-  top: -4px;
-  left: -4.3px;
+  top: -3.9px;
+  left: -4.4px;
 }
 md-card-user-name {
   display: inline-block;
@@ -323,8 +323,8 @@ md-toolbar {
   position: absolute;
   left: -40px;
   bottom: 50%;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   border: 3px solid #bdbdbd;
